@@ -1,7 +1,23 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  min-height: 93vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  flex-shrink: 0;
+  position: relative;
+  bottom: 0;
+}
+
 .split {
   height: 100%;
   width: 50%;
-  position: fixed;
+  position: absolute;
   z-index: -1;
   top: 0;
   overflow-x: hidden;

@@ -1,4 +1,6 @@
 .Home {
+  display: flex;
+  flex-direction: column;
   background-color: ghostwhite;
-  height: 100vh;
+  height: 93vh;
 }
