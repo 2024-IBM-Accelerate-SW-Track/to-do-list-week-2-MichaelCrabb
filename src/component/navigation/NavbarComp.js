@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Navbar, Nav, Container} from 'react-bootstrap'
+import {Navbar, Nav, Container} from 'react-bootstrap';
 
 import {
     BrowserRouter as Router,
@@ -9,6 +9,7 @@ import {
 } from "react-router-dom"
 import About from "../../pages/About";
 import Home from "../../pages/Home";
+import Thanks from "../../pages/Thanks";
 
 export default class NavbarComp extends Component {
     render() {
@@ -23,6 +24,7 @@ export default class NavbarComp extends Component {
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to={"/"}> Home </Nav.Link>
                         <Nav.Link as={Link} to={"/about"}>About</Nav.Link>
+                        <Nav.Link as={Link} to={"/thanks"}>Thank You!</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -32,6 +34,7 @@ export default class NavbarComp extends Component {
                 <Routes>
                 <Route exact path="/" element={<Home/>}/>
                 <Route exact path="/about" element={<About/>}/>
+                <Route exact path="/thanks" element={<Thanks/>} />
                 </Routes>
             </div>
             </Router>
